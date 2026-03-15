@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pick&Eat - Buffet en ligne Madagascar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="PickEatC.png" alt="">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="#menu"><i class="fas fa-list-alt"></i> Menu</a></li>
+                <li><a href="#commandes"><i class="fas fa-shopping-cart"></i> Mes commandes</a></li>
+                <li><a href="#contact"><i class="fas fa-phone"></i> Contact</a></li>
+            </ul>
+            <div class="cart-icon" id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h2 id="typing">Pick&Eat Madagascar</h2>
+            <p>Petit déjeuner, déjeuner, dîner, rafraîchissements et desserts - Livraison à Antananarivo et environs</p>
+            <a href="#menu" class="btn">Voir le menu <i class="fas fa-eye"></i></a>
+        </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section id="menu" class="menu-section">
+        <h2 class="section-title">Notre Menu</h2>
+        
+        <!-- Category Filters -->
+        <div class="category-filters">
+            <button class="category-btn active" data-category="all">Tous</button>
+            <button class="category-btn" data-category="breakfast">
+                <i class="fas fa-coffee"></i> Petit déjeuner
+            </button>
+            <button class="category-btn" data-category="lunch">
+                <i class="fas fa-utensils"></i> Déjeuner
+            </button>
+            <button class="category-btn" data-category="dinner">
+                <i class="fas fa-moon"></i> Dîner
+            </button>
+            <button class="category-btn" data-category="drinks">
+                <i class="fas fa-glass-cheers"></i> Rafraîchissements
+            </button>
+            <button class="category-btn" data-category="dessert">
+                <i class="fas fa-cake"></i> Desserts
+            </button>
+        </div>
+
+        <!-- Menu Items Grid -->
+        <div class="menu-grid" id="menu-grid">
+            <!-- Items will be loaded here via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Order Summary -->
+    <section id="commandes" class="order-section">
+        <h2 class="section-title">Votre commande</h2>
+        <div class="order-container">
+            <div class="order-items" id="order-items">
+                <p class="empty-cart">Votre panier est vide</p>
+            </div>
+            <div class="order-total">
+                <div class="total-line">
+                    <span>Sous-total:</span>
+                    <span id="subtotal">0 Ar</span>
+                </div>
+                <div class="total-line">
+                    <span>Livraison:</span>
+                    <span id="delivery">2 000 Ar</span>
+                </div>
+                <div class="total-line grand-total">
+                    <span>Total:</span>
+                    <span id="total">2 000 Ar</span>
+                </div>
+                <button class="btn btn-order" id="view-cart">Voir le panier</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Contactez-nous</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Pick&Eat Madagascar</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Analakely, Antananarivo 101</p>
+                <p><i class="fas fa-phone"></i> +261 38 66 242 17</p>
+                <p><i class="fas fa-envelope"></i> contact@pickandeat.mg</p>
+                <p><i class="fas fa-money-bill-wave"></i> MVola: 038 66 242 17</p>
+            </div>
+            <div class="contact-hours">
+                <h3>Heures d'ouverture</h3>
+                <p>Lundi - Vendredi: 8h00 - 20h00</p>
+                <p>Samedi - Dimanche: 9h00 - 21h00</p>
+                <p class="note">*Commandes 24h à l'avance</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Remplacer l'ancienne section contact et le footer par ceci : -->
+
+<!-- Footer (qui inclut désormais la section contact) -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <div class="logo">
+                <img src="PickEatC.png" alt="">
+            </div>
+            <p class="footer-tagline">La plateforme de buffet en ligne qui accompagne les gourmets malgaches vers l'excellence culinaire.</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Navigation</h4>
+            <ul class="footer-links">
+                <li><a href="#accueil"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="#menu"><i class="fas fa-list-alt"></i> Menu</a></li>
+                <li><a href="#commandes"><i class="fas fa-shopping-cart"></i> Mes commandes</a></li>
+                <li><a href="#contact"><i class="fas fa-phone"></i> Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Légale</h4>
+            <ul class="footer-links">
+                <li><a href="#">Conditions d'utilisation</a></li>
+                <li><a href="#">Politique de confidentialité</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <ul class="footer-contact">
+                <li><i class="fas fa-envelope"></i> contact@pickandeat.mg</li>
+                <li><i class="fas fa-phone"></i> +261 38 66 242 17</li>
+                <li><i class="fas fa-map-marker-alt"></i> Antananarivo, Madagascar</li>
+                <li><i class="fas fa-money-bill-wave"></i> MVola: 038 66 242 17</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <p>&copy; 2024 Pick&Eat Madagascar. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Supprimer l'ancienne section contact et l'ancien footer -->
+
+    <!-- Order Modal (appears when clicking "Ajouter au panier" or "Voir le panier") -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Pick&Eat Commande</h2>
+            
+            <div class="modal-conditions">
+                <h3>Conditions Pick&Eat :</h3>
+                <p>Merci de bien lire les conditions avant de passer votre commande :</p>
+                <ul>
+                    <li>Montant minimum : <strong>10 000 Ariary</strong></li>
+                    <li>Délai : Au moins <strong>24 heures à l'avance</strong></li>
+                    <li>Validation : Acompte de <strong>50%</strong> ou paiement total sous 24h</li>
+                    <li><strong>Paiements MVola</strong> : 038 66 242 17 (inclure les frais de retrait)</li>
+                </ul>
+            </div>
+
+            <div class="modal-form" id="modal-form-container">
+                <!-- Form will be populated dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content success-modal">
+            <span class="close-success">&times;</span>
+            <i class="fas fa-check-circle success-icon"></i>
+            <h2>Commande envoyée avec succès!</h2>
+            <p>Merci pour votre commande. Nous vous contacterons dans les plus brefs délais pour confirmer.</p>
+            <p class="payment-info">N'oubliez pas d'envoyer l'acompte de 50% par MVola au 038 66 242 17</p>
+            <button class="btn btn-order" id="close-success">Fermer</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

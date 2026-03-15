@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100">
+  <defs>
+    <style>
+      .cls-1{fill:#ff6b6b;} /* Rouge appétissant */
+      .cls-2{fill:#2d3436;} /* Gris très foncé */
+      .cls-3{font-size:40px;font-family:Poppins, sans-serif;font-weight:700;}
+    </style>
+  </defs>
+  
+  <circle class="cls-1" cx="50" cy="50" r="45"/>
+  <path d="M50 25c-8.28 0-15 6.72-15 15v5h30v-5c0-8.28-6.72-15-15-15z" fill="white"/>
+  <rect x="35" y="45" width="30" height="15" rx="2" fill="white"/>
+  <path d="M42 65v15M39 65v8M45 65v8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  <ellipse cx="58" cy="72" rx="4" ry="7" fill="white"/>
+  <rect x="56" y="78" width="4" height="7" rx="1" fill="white"/>
+
+  <text class="cls-3" x="110" y="65">
+    <tspan class="cls-2">Pick</tspan>
+    <tspan class="cls-1">&</tspan>
+    <tspan class="cls-2">Eat</tspan>
+  </text>
+</svg>
