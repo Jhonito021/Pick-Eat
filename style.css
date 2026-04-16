@@ -184,6 +184,8 @@ header {
 }
 
 .menu-item {
+    position: relative;
+    overflow: hidden;
     background: white;
     border-radius: 10px;
     overflow: hidden;
@@ -191,9 +193,48 @@ header {
     transition: transform 0.3s;
 }
 
+.menu-item[data-special="true"]::before {
+    content: "PROMO";
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    background: linear-gradient(135deg, #ff4444 0%, #ff6666 100%);
+    color: white;
+    padding: 5px 40px;
+    transform: rotate(45deg);
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Style spécial pour le prix du pack */
+.menu-item .price.special-price {
+    color: #ff4444;
+    font-size: 1.3rem;
+}
+
+.menu-item .original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+/* Animation pour le pack */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+/* .menu-item:has(.special-price) {
+    animation: pulse 2s ease-in-out infinite;
+    box-shadow: 0 0 15px rgba(255, 68, 68, 0.3);
+} */
+
 .menu-item:hover {
     transform: translateY(-5px);
-
 }
 
 .menu-item img {
@@ -916,4 +957,28 @@ header {
     .product-info {
         font-size: 0.9rem;
     }
+}
+
+/* Style spécial pour les boutons de pack */
+.category-btn[data-category="breakfast-pack"],
+.category-btn[data-category="lunch-pack"] {
+    background: linear-gradient(135deg, #ffd70020 0%, #ffaa0020 100%);
+    border: 1px solid #ffd700;
+}
+
+.category-btn[data-category="breakfast-pack"] i,
+.category-btn[data-category="lunch-pack"] i {
+    color: #ffd700;
+}
+
+.category-btn[data-category="breakfast-pack"]:hover,
+.category-btn[data-category="lunch-pack"]:hover {
+    background: linear-gradient(135deg, #ffd700 0%, #ffaa00 100%);
+    color: #333;
+}
+
+.category-btn[data-category="breakfast-pack"].active,
+.category-btn[data-category="lunch-pack"].active {
+    background: linear-gradient(135deg, #ffd700 0%, #ffaa00 100%);
+    color: #333;
 }
