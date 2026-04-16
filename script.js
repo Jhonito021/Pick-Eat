@@ -169,7 +169,7 @@ function displayOrderModal(item, quantity = 1) {
 // Display cart modal with all items
 function displayCartModal() {
     const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    const delivery = 2000;
+    const delivery = 5000;
     const total = subtotal + delivery;
     
     const cartItemsHtml = cart.map(item => `
