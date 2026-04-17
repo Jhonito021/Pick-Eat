@@ -5,7 +5,7 @@ const menuItems = [
         name: "Omelette & pain",
         description: "Omelette aux herbes, pain frais, café ou thé",
         price: 10000,
-        category: "breakfast",
+        category: "breakfast-pack",
         image: "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
     },
     {
