@@ -385,4 +385,230 @@ const menuItems = [
         isSpecial: true,
         badge: "PROMO"
     },
+    {
+        id: 101,
+        name: "Gaufres maison",
+        description: "Gaufres chaudes, chantilly, coulis de chocolat",
+        price: 11000,
+        category: "breakfast",
+        image: "https://images.unsplash.com/photo-1562376552-0d160a2f238d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 102,
+        name: "Tsaramaso & mofo",
+        description: "Haricots blancs cuisinés, pain maison",
+        price: 9000,
+        category: "breakfast",
+        image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 103,
+        name: "Porridge à la vanille",
+        description: "Flocons d'avoine, lait, vanille de Madagascar",
+        price: 8500,
+        category: "breakfast",
+        image: "https://images.unsplash.com/photo-1505311329370-47df2b4572a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 104,
+        name: "Eggs Benedict",
+        description: "Oeufs pochés, sauce hollandaise, bacon",
+        price: 14000,
+        category: "breakfast",
+        image: "https://images.unsplash.com/photo-1608039829872-3c2d88f5b668?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 105,
+        name: "Riz & Lasopy",
+        description: "Riz blanc, soupe de légumes traditionnelle",
+        price: 14000,
+        category: "lunch",
+        image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 106,
+        name: "Riz & Akoho sy sakamalao",
+        description: "Poulet au gingembre, riz parfumé",
+        price: 19500,
+        category: "lunch",
+        image: "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 107,
+        name: "Riz & Henakisoa sy anana",
+        description: "Porc sauté aux légumes verts",
+        price: 18500,
+        category: "lunch",
+        image: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 108,
+        name: "Riz & Trondro gasy",
+        description: "Poisson du lac, sauce tomate, riz blanc",
+        price: 20500,
+        category: "lunch",
+        image: "https://images.unsplash.com/photo-1584308666744-24d5c6deabc5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 109,
+        name: "Riz & Mofo anana",
+        description: "Beignets de légumes, riz blanc",
+        price: 13000,
+        category: "lunch",
+        image: "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 110,
+        name: "Burger du Chef",
+        description: "Double steak, cheddar, bacon, oignons caramélisés",
+        price: 19000,
+        category: "dinner",
+        image: "https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 111,
+        name: "Pâtes carbonara",
+        description: "Spaghetti, crème, lardons, parmesan",
+        price: 15500,
+        category: "dinner",
+        image: "https://images.unsplash.com/photo-1645112411344-31c6d7259fdd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 112,
+        name: "Fish & Chips",
+        description: "Filet de poisson pané, frites, sauce tartare",
+        price: 17000,
+        category: "dinner",
+        image: "https://images.unsplash.com/photo-1592279645098-2ac7b2526f6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 113,
+        name: "Wraps poulet",
+        description: "Galette, poulet grillé, crudités, sauce blanche",
+        price: 14000,
+        category: "dinner",
+        image: "https://images.unsplash.com/photo-1626700054175-7ebb20b3d495?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 114,
+        name: "Quinoa bowl",
+        description: "Quinoa, avocat, légumes grillés, oeuf poché",
+        price: 16500,
+        category: "dinner",
+        image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 115,
+        name: "Jus de mangue",
+        description: "Jus frais de mangue de Madagascar",
+        price: 5500,
+        category: "drinks",
+        image: "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 116,
+        name: "Jus de litchi",
+        description: "Jus frais de litchi",
+        price: 6000,
+        category: "drinks",
+        image: "https://images.unsplash.com/photo-1600271886742-f049cd451bba?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 117,
+        name: "Milkshake vanille",
+        description: "Lait frappé, glace vanille, chantilly",
+        price: 7000,
+        category: "drinks",
+        image: "https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 118,
+        name: "Thé glacé maison",
+        description: "Thé noir, citron, menthe, glaçons",
+        price: 4500,
+        category: "drinks",
+        image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 119,
+        name: "Café glacé",
+        description: "Café espresso, lait, sirop, glaçons",
+        price: 5000,
+        category: "drinks",
+        image: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+
+    // ==================== DESSERTS (dessert) ====================
+    {
+        id: 35,
+        name: "Avocat",
+        description: "Avocat frais, prêt à déguster",
+        price: 4000,
+        category: "dessert",
+        image: "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 120,
+        name: "Mangue fraîche",
+        description: "Mangue mûre de Madagascar",
+        price: 4500,
+        category: "dessert",
+        image: "https://images.unsplash.com/photo-1553279768-865429fa0078?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 121,
+        name: "Fruits de saison",
+        description: "Assortiment de fruits frais locaux",
+        price: 6000,
+        category: "dessert",
+        image: "https://images.unsplash.com/photo-1571770095004-6b61b1cf308a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 122,
+        name: "Yaourt aux fruits",
+        description: "Yaourt nature, coulis de fruits frais",
+        price: 5000,
+        category: "dessert",
+        image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 123,
+        name: "Salade de fruits",
+        description: "Dés de fruits frais, sirop léger",
+        price: 5500,
+        category: "dessert",
+        image: "https://images.unsplash.com/photo-1567103472667-6898f3a79cf2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 124,
+        name: "Glace vanille",
+        description: "Glace artisanale à la vanille de Madagascar",
+        price: 4500,
+        category: "dessert",
+        image: "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 125,
+        name: "Sorbet citron",
+        description: "Sorbet frais au citron vert",
+        price: 4500,
+        category: "dessert",
+        image: "https://images.unsplash.com/photo-1516559828984-fb3b99548b21?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 126,
+        name: "Mousse au chocolat",
+        description: "Mousse légère au chocolat noir",
+        price: 6000,
+        category: "dessert",
+        image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    },
+    {
+        id: 127,
+        name: "Coconut balls",
+        description: "Boules coco, spécialité malgache",
+        price: 4000,
+        category: "dessert",
+        image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+    }
 ];

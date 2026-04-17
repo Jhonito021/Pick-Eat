@@ -990,3 +990,57 @@ header {
     background: linear-gradient(135deg, #ffd700 0%, #ffaa00 100%);
     color: #333;
 }
+
+/* Style pour la redirection WhatsApp */
+.whatsapp-redirect {
+    background: #25D36610;
+    border: 1px solid #25D366;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.whatsapp-icon {
+    font-size: 2rem;
+    color: #25D366;
+    margin-top: 0.5rem;
+    display: inline-block;
+    animation: pulse 1.5s ease infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Style pour l'envoi WhatsApp */
+.whatsapp-btn {
+    background: #25D366;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background: #128C7E;
+    transform: scale(1.05);
+}
+
+.whatsapp-btn i {
+    margin-right: 0.5rem;
+}
