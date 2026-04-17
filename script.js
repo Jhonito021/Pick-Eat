@@ -264,10 +264,7 @@ window.submitOrder = function(event) {
     
     const total = currentItem.price * formData.quantity;
     
-    if (total < 10000) {
-        showNotification('Le montant minimum est de 10 000 Ar');
-        return;
-    }
+    
     
     // Add to cart
     const existingItem = cart.find(item => item.id === currentItem.id);
@@ -446,33 +443,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
-// Typing
-const element = document.getElementById("typing");
-const texts = ["Bienvenue", "Pick&Eat Mafagascar"];
-let textIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
-
-function type () {
-    const currentItem = texts[textIndex];
-    if (!isDeleting) {
-        element.textContent = currentText.substring(0, charIndex + 1);
-        charIndex++;
-        if (charIndex === currentText.length) {
-            setTimeout(() => isDeleting = true, 1000);
-        }
-    } else {
-        element.textContent = currentText.substring(0, charIndex - 1);
-        charIndex--;
-        if (charIndex === 0) {
-            isDeleting = false;
-            textIndex++;
-            if (textIndex >= texts.length) textIndex = texts.length - 1;
-        }
-    }
-    const speed = isDeleting ? 50 : 100;
-    setTimeout (type, speed);
-}
-
-type();
