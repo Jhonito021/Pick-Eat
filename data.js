@@ -594,20 +594,4 @@ const menuItems = [
         category: "dessert",
         image: "https://images.unsplash.com/photo-1516559828984-fb3b99548b21?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
     },
-    {
-        id: 126,
-        name: "Mousse au chocolat",
-        description: "Mousse légère au chocolat noir",
-        price: 6000,
-        category: "dessert",
-        image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-    },
-    {
-        id: 127,
-        name: "Coconut balls",
-        description: "Boules coco, spécialité malgache",
-        price: 4000,
-        category: "dessert",
-        image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-    }
 ];
