@@ -1,3 +1,5 @@
+
+
 const menuItems = [
     // Petit déjeuner
     {
@@ -5,7 +7,7 @@ const menuItems = [
         name: "Omelette & pain",
         description: "Omelette aux herbes, pain frais, café ou thé",
         price: 10000,
-        category: "breakfast-pack",
+        category: "packs",
         image: "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
     },
     {
@@ -380,7 +382,7 @@ const menuItems = [
         name: "PACK PETIT DÉJEUNER EXPRESS",
         description: "Menu complet à 10 000 Ar seulement ! Café/Thé + Viennoiserie + Jus de fruit + Fruit frais",
         price: 10000,
-        category: "breakfast-pack",
+        category: "packs",
         image: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
         isSpecial: true,
         badge: "PROMO"
@@ -407,7 +409,7 @@ const menuItems = [
         description: "Flocons d'avoine, lait, vanille de Madagascar",
         price: 8500,
         category: "breakfast",
-        image: "https://images.unsplash.com/photo-1505311329370-47df2b4572a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        image: ""
     },
     {
         id: 104,
@@ -415,7 +417,7 @@ const menuItems = [
         description: "Oeufs pochés, sauce hollandaise, bacon",
         price: 14000,
         category: "breakfast",
-        image: "https://images.unsplash.com/photo-1608039829872-3c2d88f5b668?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        image: ""
     },
     {
         id: 105,
@@ -447,14 +449,15 @@ const menuItems = [
         description: "Poisson du lac, sauce tomate, riz blanc",
         price: 20500,
         category: "lunch",
-        image: "https://images.unsplash.com/photo-1584308666744-24d5c6deabc5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        image: ""
     },
     {
         id: 109,
         name: "Riz & Mofo anana",
         description: "Beignets de légumes, riz blanc",
         price: 13000,
-        category: "lunch"
+        category: "lunch",
+        image:""
     },
     {
         id: 110,
@@ -470,7 +473,7 @@ const menuItems = [
         description: "Spaghetti, crème, lardons, parmesan",
         price: 15500,
         category: "dinner",
-        image: "https://images.unsplash.com/photo-1645112411344-31c6d7259fdd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        image: ""
     },
     {
         id: 112,
@@ -478,7 +481,7 @@ const menuItems = [
         description: "Filet de poisson pané, frites, sauce tartare",
         price: 17000,
         category: "dinner",
-        image: "https://images.unsplash.com/photo-1592279645098-2ac7b2526f6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        image: ""
     },
     {
         id: 113,
@@ -486,7 +489,7 @@ const menuItems = [
         description: "Galette, poulet grillé, crudités, sauce blanche",
         price: 14000,
         category: "dinner",
-        image: "https://images.unsplash.com/photo-1626700054175-7ebb20b3d495?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        image: ""
     },
     {
         id: 114,
@@ -494,7 +497,7 @@ const menuItems = [
         description: "Quinoa, avocat, légumes grillés, oeuf poché",
         price: 16500,
         category: "dinner",
-        image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        image: ""
     },
     {
         id: 115,
@@ -560,7 +563,7 @@ const menuItems = [
         description: "Assortiment de fruits frais locaux",
         price: 6000,
         category: "dessert",
-        image: "https://images.unsplash.com/photo-1571770095004-6b61b1cf308a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        image: ""
     },
     {
         id: 122,
@@ -576,7 +579,7 @@ const menuItems = [
         description: "Dés de fruits frais, sirop léger",
         price: 5500,
         category: "dessert",
-        image: "https://images.unsplash.com/photo-1567103472667-6898f3a79cf2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+        image: ""
     },
     {
         id: 124,
@@ -609,5 +612,165 @@ const menuItems = [
         price: 4000,
         category: "dessert",
         image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-    }
+    },
+    {
+        id: 128,
+        name: " PACK PETIT DÉJEUNER DELUXE",
+        description: "Omelette + Pancakes + Jus pressé + Café gourmet + Fruits",
+        price: 25000,
+        category: "packs",
+        image: "",
+        isSpecial: true,
+        badge: "DELUXE"
+    },
+    {
+        id: 129,
+        name: " PACK DÉJEUNER EXPRESS",
+        description: "Riz + Viande au choix + Légume + Boisson",
+        price: 10000,
+        category: "packs",
+        image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        isSpecial: true,
+        badge: "PROMO"
+    },
+    {
+        id: 130,
+        name: " PACK DÉJEUNER FAMILLE (4 pers)",
+        description: "4x Riz + 4x Viandes assorties + 4x Légumes + 4x Boissons",
+        price: 38000,
+        category: "packs",
+        image: "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        isSpecial: true,
+        badge: "FAMILLE"
+    },
+    {
+        id: 131,
+        name: " PACK DÉJEUNER TRADITIONNEL",
+        description: "Riz + Ravitoto + Henakisoa + Lasopy + Jus naturel",
+        price: 15000,
+        category: "packs",
+        image: "https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        isSpecial: true,
+        badge: "TRADITION"
+    },
+    {
+        id: 132,
+        name: "🎁 PACK DÎNER ROMANTIQUE",
+        description: "Pizza ou Pâtes + Salade + 2 Boissons + Dessert",
+        price: 35000,
+        category: "packs",
+        image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        isSpecial: true,
+        badge: "ROMANTIQUE"
+    },
+    {
+        id: 133,
+        name: "🎁 PACK DÎNER FAST FOOD",
+        description: "Burger + Frites + Boisson 33cl",
+        price: 18000,
+        category: "packs",
+        image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        isSpecial: true,
+        badge: "FAST FOOD"
+    },
+    {
+        id: 134,
+        name: "🎁 PACK DÎNER ASIATIQUE",
+        description: "Ramen ou Sushi (8p) + Nems + Thé glacé",
+        price: 30000,
+        category: "packs",
+        image: "https://images.unsplash.com/photo-1557872943-16a5ac26437e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        isSpecial: true,
+        badge: "ASIATIQUE"
+    },
+    {
+        id: 135,
+        name: "🎁 PACK BOISSON FAMILLE",
+        description: "6x Boissons au choix (Coca, Fanta, Sprite, Eau)",
+        price: 15000,
+        category: "packs",
+        image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        isSpecial: true,
+        badge: "FAMILLE"
+    },
+    {
+        id: 136,
+        name: "🎁 PACK JUS NATURELS",
+        description: "3x Jus frais (Mangue, Ananas, Litchi)",
+        price: 14000,
+        category: "packs",
+        image: "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        isSpecial: true,
+        badge: "NATURE"
+    },
+    {
+        id: 137,
+        name: "🎁 PACK SOIRÉE",
+        description: "4x Boissons XXL + 2x Jus naturels",
+        price: 22000,
+        category: "packs",
+        image: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        isSpecial: true,
+        badge: "SOIRÉE"
+    },
+    {
+        id: 138,
+        name: "🎁 PACK DESSERT FRUITS",
+        description: "Assortiment de 6 fruits frais (Avocat, Orange, Banane, Mangue, Ananas, Poire)",
+        price: 18000,
+        category: "packs",
+        image: "",
+        isSpecial: true,
+        badge: "FRUITS"
+    },
+    {
+        id: 139,
+        name: "🎁 PACK DESSERT GOURMAND",
+        description: "Mousse au chocolat + Glace vanille + Coconut balls",
+        price: 15000,
+        category: "packs",
+        image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        isSpecial: true,
+        badge: "GOURMAND"
+    },
+    {
+        id: 140,
+        name: "🎁 PACK DESSERT TROPICAL",
+        description: "Salade de fruits frais + Sorbet citron + Ananas grillé",
+        price: 16000,
+        category: "packs",
+        image: "",
+        isSpecial: true,
+        badge: "TROPICAL"
+    },
+    {
+        id: 141,
+        name: "🎁 PICK&EAT PLATINUM",
+        description: "Menu complet: Entrée + Plat + Dessert + Boisson + Café",
+        price: 45000,
+        category: "packs",
+        image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        isSpecial: true,
+        badge: "PLATINUM"
+    },
+    {
+        id: 142,
+        name: "🎁 PACK DATE NIGHT",
+        description: "Pour 2: Apéritif + Plat principal + Dessert + 2 Boissons",
+        price: 55000,
+        category: "packs",
+        image: "https://images.unsplash.com/photo-1515442261605-65987783cb6a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        isSpecial: true,
+        badge: "DATE NIGHT"
+    },
+    {
+        id: 143,
+        name: "🎁 PACK FÊTE (10 pers)",
+        description: "Idéal pour anniversaire: 10 plats + 10 boissons + 10 desserts",
+        price: 120000,
+        category: "packs",
+        image: "https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+        isSpecial: true,
+        badge: "FÊTE"
+    },
 ];

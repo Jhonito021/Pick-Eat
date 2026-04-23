@@ -48,28 +48,17 @@
     <!-- Menu Categories -->
     <section id="menu" class="menu-section">
         <h2 class="section-title">Notre Menu</h2>
-        
-        <!-- Category Filters -->
-        <div class="category-filters">
-            <button class="category-btn active" data-category="all">Tous</button>
-            <button class="category-btn" data-category="breakfast">
-                <i class="fas fa-coffee"></i> Petit déjeuner
-            </button>
-            <button class="category-btn" data-category="breakfast-pack">
-                <i class="fas fa-gift"></i> Pack Petit Déjeuner
-            </button>
-            <button class="category-btn" data-category="lunch">
-                <i class="fas fa-utensils"></i> Déjeuner
-            </button>
-            <button class="category-btn" data-category="dinner">
-                <i class="fas fa-moon"></i> Dîner
-            </button>
-            <button class="category-btn" data-category="drinks">
-                <i class="fas fa-glass-cheers"></i> Rafraîchissements
-            </button>
-            <button class="category-btn" data-category="dessert">
-                <i class="fas fa-cake"></i> Desserts
-            </button>
+        <!-- Version ultra simple : uniquement le select -->
+        <div class="category-filters-wrapper">
+            <select id="category-select" class="category-select">
+                <option value="all">Tous les plats</option>
+                <option value="breakfast">Petit déjeuner</option>
+                <option value="lunch">Déjeuner</option>
+                <option value="dinner">Dîner</option>
+                <option value="drinks">Rafraîchissements</option>
+                <option value="dessert">Desserts</option>
+                <option value="packs">TOUS LES PACKS</option>
+            </select>
         </div>
 
         <!-- Menu Items Grid -->
@@ -229,6 +218,6 @@
     </div>
 
     <script src="script.js"></script>
-    <script src="data.js"></script>
+    <!-- <script src="data.js"></script> -->
 </body>
 </html>
