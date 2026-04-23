@@ -251,7 +251,7 @@ function openCheckoutModal() {
             </div>
             <div class="form-group">
                 <label>Contact (Téléphone) : <span class="required">*</span></label>
-                <input type="tel" id="contact" class="form-control" placeholder="034..." required>
+                <input type="text" id="contact" class="form-control" placeholder="034..." required>
             </div>
             <div class="form-row">
                 <div class="form-group">
@@ -291,6 +291,7 @@ function openCheckoutModal() {
 }
 
 // ==================== SOUMISSION COMMANDE FINALE (CORRIGÉE) ====================
+// ==================== SOUMISSION COMMANDE FINALE AVEC WHATSAPP ====================
 window.submitFinalOrder = function(event) {
     event.preventDefault();
     
@@ -350,6 +351,37 @@ window.submitFinalOrder = function(event) {
     
     const total = subtotal + DELIVERY_FEE;
     
+    // Construction du message WhatsApp
+    let whatsappMessage = `🆕 *NOUVELLE COMMANDE Pick&Eat* 🍽️%0A%0A`;
+    whatsappMessage += `👤 *Client:* ${prenom}%0A`;
+    whatsappMessage += `📞 *Contact:* ${contact}%0A`;
+    whatsappMessage += `📅 *Date:* ${date} à ${time}%0A`;
+    whatsappMessage += `🏠 *Adresse:* ${adresse}%0A%0A`;
+    whatsappMessage += `📋 *DÉTAIL DE LA COMMANDE:*%0A`;
+    whatsappMessage += `─────────────────%0A`;
+    
+    cart.forEach(item => {
+        whatsappMessage += `• ${item.name} x${item.quantity} = ${formatPrice(item.price * item.quantity)} Ar%0A`;
+    });
+    
+    whatsappMessage += `─────────────────%0A`;
+    whatsappMessage += `💰 *Sous-total:* ${formatPrice(subtotal)} Ar%0A`;
+    whatsappMessage += `🚚 *Livraison:* ${formatPrice(DELIVERY_FEE)} Ar%0A`;
+    whatsappMessage += `💵 *TOTAL:* ${formatPrice(total)} Ar%0A%0A`;
+    whatsappMessage += `💳 *Paiement MVola:* 038 66 242 17%0A`;
+    whatsappMessage += `💸 *Acompte 50%:* ${formatPrice(total / 2)} Ar%0A%0A`;
+    whatsappMessage += `✅ *Statut:* En attente de confirmation`;
+    
+    // Numéro WhatsApp du restaurant (remplacez par votre numéro)
+    const phoneNumber = "261385101400"; // Votre numéro WhatsApp
+    
+    // Créer le lien WhatsApp
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+    
+    // Ouvrir WhatsApp dans un nouvel onglet
+    window.open(whatsappLink, '_blank');
+    
+    // Afficher le récapitulatif pour le client
     const recap = `✅ COMMANDE CONFIRMÉE - LIVRAISON À DOMICILE !\n\n` +
         `👤 Client: ${prenom}\n` +
         `📞 Contact: ${contact}\n` +
@@ -364,6 +396,7 @@ window.submitFinalOrder = function(event) {
         `💵 TOTAL À PAYER: ${formatPrice(total)} Ar\n\n` +
         `💳 Paiement à effectuer par MVola: 038 66 242 17\n` +
         `💸 Acompte 50%: ${formatPrice(total / 2)} Ar\n\n` +
+        `Un message a été envoyé au restaurant via WhatsApp.\n` +
         `Merci pour votre commande !`;
     
     alert(recap);
@@ -371,15 +404,6 @@ window.submitFinalOrder = function(event) {
     showSuccessModal();
     cart = [];
     updateCart();
-};
-// ==================== GESTION DU PANIER ====================
-window.removeFromCart = function(itemId) {
-    cart = cart.filter(item => item.id !== itemId);
-    updateCart();
-    showNotification('Article retiré');
-    if (orderModal.style.display === 'block' && document.getElementById('checkout-form')) {
-        openCheckoutModal();
-    }
 };
 
 function updateCart() {
