@@ -290,55 +290,20 @@ function openCheckoutModal() {
     orderModal.style.display = 'block';
 }
 
-// ==================== SOUMISSION COMMANDE FINALE (CORRIGÉE) ====================
-// ==================== SOUMISSION COMMANDE FINALE AVEC WHATSAPP ====================
+// ==================== SOUMISSION COMMANDE FINALE AVEC WHATSAPP (VERSION SIMPLIFIÉE) ====================
 window.submitFinalOrder = function(event) {
     event.preventDefault();
     
-    // Récupération des valeurs avec vérification que les éléments existent
-    const prenomInput = document.getElementById('prenom');
-    const contactInput = document.getElementById('contact');
-    const dateInput = document.getElementById('date');
-    const timeInput = document.getElementById('time');
-    const lieuInput = document.getElementById('lieu');
+    // Récupération des valeurs
+    const prenom = document.getElementById('prenom')?.value.trim();
+    // const contact = document.getElementById('contact')?.value.trim();
+    const date = document.getElementById('date')?.value;
+    const time = document.getElementById('time')?.value;
+    const adresse = document.getElementById('lieu')?.value.trim();
     
-    // Vérifier que tous les éléments existent dans le DOM
-    if (!prenomInput || !contactInput || !dateInput || !timeInput || !lieuInput) {
-        console.error("Des champs sont manquants dans le formulaire");
-        showNotification('Erreur technique : champs manquants');
-        return;
-    }
-    
-    const prenom = prenomInput.value.trim();
-    // const contact = contactInput.value.trim();
-    const date = dateInput.value;
-    const time = timeInput.value;
-    const adresse = lieuInput.value.trim();
-    
-    // Vérification des champs vides avec messages spécifiques
-    if (!prenom) {
-        showNotification('Veuillez entrer votre prénom');
-        prenomInput.focus();
-        return;
-    }
-    if (!contact) {
-        showNotification('Veuillez entrer votre numéro de téléphone');
-        contactInput.focus();
-        return;
-    }
-    if (!date) {
-        showNotification('Veuillez sélectionner une date de livraison');
-        dateInput.focus();
-        return;
-    }
-    if (!time) {
-        showNotification('Veuillez sélectionner une heure de livraison');
-        timeInput.focus();
-        return;
-    }
-    if (!adresse) {
-        showNotification('Veuillez entrer votre adresse de livraison');
-        lieuInput.focus();
+    // Vérifications
+    if (!prenom || !contact || !date || !time || !adresse) {
+        showNotification('Veuillez remplir tous les champs');
         return;
     }
     
@@ -351,55 +316,39 @@ window.submitFinalOrder = function(event) {
     
     const total = subtotal + DELIVERY_FEE;
     
-    // Construction du message WhatsApp
-    let whatsappMessage = `🆕 *NOUVELLE COMMANDE Pick&Eat* 🍽️%0A%0A`;
-    whatsappMessage += `👤 *Client:* ${prenom}%0A`;
-    whatsappMessage += `📞 *Contact:* ${contact}%0A`;
-    whatsappMessage += `📅 *Date:* ${date} à ${time}%0A`;
-    whatsappMessage += `🏠 *Adresse:* ${adresse}%0A%0A`;
-    whatsappMessage += `📋 *DÉTAIL DE LA COMMANDE:*%0A`;
-    whatsappMessage += `─────────────────%0A`;
+    // Construction du message WhatsApp (format simple)
+    let message = `🆕 NOUVELLE COMMANDE Pick&Eat 🍽️\n\n`;
+    message += `Client: ${prenom}\n`;
+    message += `Contact: ${contact}\n`;
+    message += `Date: ${date} à ${time}\n`;
+    message += `Adresse: ${adresse}\n\n`;
+    message += `Détail de la commande:\n`;
+    message += `--------------------\n`;
     
     cart.forEach(item => {
-        whatsappMessage += `• ${item.name} x${item.quantity} = ${formatPrice(item.price * item.quantity)} Ar%0A`;
+        message += `${item.name} x${item.quantity} = ${formatPrice(item.price * item.quantity)} Ar\n`;
     });
     
-    whatsappMessage += `─────────────────%0A`;
-    whatsappMessage += `💰 *Sous-total:* ${formatPrice(subtotal)} Ar%0A`;
-    whatsappMessage += `🚚 *Livraison:* ${formatPrice(DELIVERY_FEE)} Ar%0A`;
-    whatsappMessage += `💵 *TOTAL:* ${formatPrice(total)} Ar%0A%0A`;
-    whatsappMessage += `💳 *Paiement MVola:* 038 66 242 17%0A`;
-    whatsappMessage += `💸 *Acompte 50%:* ${formatPrice(total / 2)} Ar%0A%0A`;
-    whatsappMessage += `✅ *Statut:* En attente de confirmation`;
+    message += `--------------------\n`;
+    message += `Sous-total: ${formatPrice(subtotal)} Ar\n`;
+    message += `Livraison: ${formatPrice(DELIVERY_FEE)} Ar\n`;
+    message += `TOTAL: ${formatPrice(total)} Ar\n\n`;
+    message += `Paiement MVola: 038 66 242 17\n`;
+    message += `Acompte 50%: ${formatPrice(total / 2)} Ar`;
     
-    // Numéro WhatsApp du restaurant (remplacez par votre numéro)
-    const phoneNumber = "261385101400"; // Votre numéro WhatsApp
+    // Encoder le message pour URL
+    const encodedMessage = encodeURIComponent(message);
     
-    // Créer le lien WhatsApp
-    const whatsappLink = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+    // Numéro WhatsApp (remplacez par le vôtre)
+    const phoneNumber = "261386624217";
     
-    // Ouvrir WhatsApp dans un nouvel onglet
-    window.open(whatsappLink, '_blank');
+    // Ouvrir WhatsApp
+    window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
     
-    // Afficher le récapitulatif pour le client
-    const recap = `✅ COMMANDE CONFIRMÉE - LIVRAISON À DOMICILE !\n\n` +
-        `👤 Client: ${prenom}\n` +
-        `📞 Contact: ${contact}\n` +
-        `📅 Date: ${date} à ${time}\n` +
-        `🏠 Adresse: ${adresse}\n\n` +
-        `📋 DÉTAIL DE LA COMMANDE:\n` +
-        `─────────────────\n` +
-        cart.map(item => `- ${item.name} x${item.quantity} = ${formatPrice(item.price * item.quantity)} Ar`).join('\n') +
-        `\n─────────────────\n` +
-        `💰 Sous-total: ${formatPrice(subtotal)} Ar\n` +
-        `🚚 Livraison: ${formatPrice(DELIVERY_FEE)} Ar\n` +
-        `💵 TOTAL À PAYER: ${formatPrice(total)} Ar\n\n` +
-        `💳 Paiement à effectuer par MVola: 038 66 242 17\n` +
-        `💸 Acompte 50%: ${formatPrice(total / 2)} Ar\n\n` +
-        `Un message a été envoyé au restaurant via WhatsApp.\n` +
-        `Merci pour votre commande !`;
+    // Afficher succès
+    showNotification('Commande envoyée ! Vous allez être redirigé vers WhatsApp.');
     
-    alert(recap);
+    // Fermer le modal et vider le panier
     orderModal.style.display = 'none';
     showSuccessModal();
     cart = [];
