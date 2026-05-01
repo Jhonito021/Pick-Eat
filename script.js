@@ -25,46 +25,39 @@ function formatPrice(price) {
 
 // ==================== TOUS LES PACKS ====================
 const packs = [
-    { id: 100, name: "🎁 PACK PETIT DÉJEUNER EXPRESS", description: "Café/Thé + Viennoiserie + Jus de fruit + Fruit frais", price: 10000, category: "packs", image: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", isSpecial: true, badge: "PROMO" },
-    { id: 200, name: "🎁 PACK PETIT DÉJEUNER FAMILLE", description: "4x Café/Thé + 4x Viennoiseries + 2x Jus + Assortiment fruits", price: 35000, category: "packs", image: "Photo/Cafe.jpeg", isSpecial: true, badge: "FAMILLE" },
-    // { id: 201, name: "🎁 PACK PETIT DÉJEUNER DELUXE", description: "Omelette + Pancakes + Jus pressé + Café gourmet + Fruits", price: 25000, category: "packs", image: "https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", isSpecial: true, badge: "DELUXE" },
-    { id: 40, name: "🎁 PACK DÉJEUNER EXPRESS", description: "Riz + Viande au choix + Légume + Boisson", price: 10000, category: "packs", image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", isSpecial: true, badge: "PROMO" },
-    { id: 202, name: "🎁 PACK DÉJEUNER FAMILLE (4 pers)", description: "4x Riz + 4x Viandes assorties + 4x Légumes + 4x Boissons", price: 38000, category: "packs", image: "https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", isSpecial: true, badge: "FAMILLE" },
-    { id: 203, name: "🎁 PACK DÉJEUNER TRADITIONNEL", description: "Riz + Ravitoto + Henakisoa + Lasopy + Jus naturel", price: 15000, category: "packs", image: "Photo/Ravitoto.jpeg", isSpecial: true, badge: "TRADITION" },
-    { id: 204, name: "🎁 PACK DÉJEUNER BUREAU", description: "Riz cantonais + Brochette + Boisson fraîche", price: 18000, category: "packs", image: "Photo/RizCantonnais.jpeg", isSpecial: true, badge: "BUREAU" },
-    { id: 205, name: "🎁 PACK DÎNER ROMANTIQUE", description: "Pizza ou Pâtes + Salade + 2 Boissons + Dessert", price: 35000, category: "packs", image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", isSpecial: true, badge: "ROMANTIQUE" },
-    { id: 206, name: "🎁 PACK DÎNER FAST FOOD", description: "Burger + Frites + Boisson 33cl", price: 18000, category: "packs", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", isSpecial: true, badge: "FAST FOOD" },
-    { id: 207, name: "🎁 PACK DÎNER ASIATIQUE", description: "Ramen ou Sushi (8p) + Nems + Thé glacé", price: 30000, category: "packs", image: "Photo/Sushi.jpeg", isSpecial: true, badge: "ASIATIQUE" },
-    { id: 208, name: "🎁 PACK DÎNER MEXICAIN", description: "2 Tacos + Guacamole + Nachos + Boissons", price: 28000, category: "packs", image: "https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", isSpecial: true, badge: "MEXICAIN" },
-    { id: 209, name: "🎁 PACK BOISSON FAMILLE", description: "6x Boissons au choix (Coca, Fanta, Sprite, Eau)", price: 15000, category: "packs", image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", isSpecial: true, badge: "FAMILLE" },
-    { id: 210, name: "🎁 PACK JUS NATURELS", description: "3x Jus frais (Mangue, Ananas, Litchi)", price: 14000, category: "packs", image: "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", isSpecial: true, badge: "NATURE" },
-    { id: 211, name: "🎁 PACK SOIRÉE", description: "4x Boissons XXL + 2x Jus naturels", price: 22000, category: "packs", image: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", isSpecial: true, badge: "SOIRÉE" },
-    // { id: 212, name: "🎁 PACK DESSERT FRUITS", description: "Assortiment de 6 fruits frais", price: 18000, category: "packs", image: "https://images.unsplash.com/photo-1571770095004-6b61b1cf308a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", isSpecial: true, badge: "FRUITS" },
-    { id: 213, name: "🎁 PACK DESSERT GOURMAND", description: "Mousse au chocolat + Glace vanille + Coconut balls", price: 15000, category: "packs", image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", isSpecial: true, badge: "GOURMAND" },
-    // { id: 214, name: "🎁 PACK DESSERT TROPICAL", description: "Salade de fruits frais + Sorbet citron + Ananas grillé", price: 16000, category: "packs", image: "https://images.unsplash.com/photo-1567103472667-6898f3a79cf2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", isSpecial: true, badge: "TROPICAL" },
-    { id: 215, name: "🎁 PICK&EAT PLATINUM", description: "Menu complet: Entrée + Plat + Dessert + Boisson + Café", price: 45000, category: "packs", image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", isSpecial: true, badge: "PLATINUM" },
-    { id: 216, name: "🎁 PACK DATE NIGHT", description: "Pour 2: Apéritif + Plat principal + Dessert + 2 Boissons", price: 40000, category: "packs", image: "https://images.unsplash.com/photo-1515442261605-65987783cb6a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", isSpecial: true, badge: "DATE NIGHT" },
-    { id: 217, name: "🎁 PACK FÊTE (10 pers)", description: "Idéal pour anniversaire: 10 plats + 10 boissons + 10 desserts", price: 120000, category: "packs", image: "https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", isSpecial: true, badge: "FÊTE" },
-    { id: 218, name: "🎁 PACK STUDENT", description: "Étudiant: Repas complet à prix mini (Riz + Viande + Boisson)", price: 12000, category: "packs", image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80", isSpecial: true, badge: "STUDENT" }
+    { id: 200, name: "🎁 PACK 1", description: "2 jus, fruits, chips, yaourt", price: 15000, category: "packs", image: "Photo/Pack1.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 201, name: "🎁 PACK 2", description: "Chocolat, croissant, gauffre, raisins, fraise", price: 12000, category: "packs", image: "Photo/Pack2.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 202, name: "🎁 PACK 3", description: "Pancake, Gauffre ...", price: 10000, category: "packs", image: "Photo/Pack3.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 203, name: "🎁 PACK 4", description: "Jus naturel, fruit", price: 14000, category: "packs", image: "Photo/Pack4.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 204, name: "🎁 PACK 5", description: "Fruits, Gauffre, Chocolat", price: 20000, category: "packs", image: "Photo/Pack5.jpg", isSpecial: true, badge: "ROMANTIQUE" },
+    { id: 205, name: "🎁 PACK 6", description: "Fruits, Tacos", price: 20000, category: "packs", image: "Photo/Pack6.jpg", isSpecial: true, badge: "AMIS" },
+    { id: 206, name: "🎁 PACK 7", description: "Mini sandwich, jus", price: 10000, category: "packs", image: "Photo/Pack7.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 207, name: "🎁 PACK 8", description: "", price: 10000, category: "packs", image: "Photo/Pack8.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 208, name: "🎁 PACK 9", description: "", price: 10000, category: "packs", image: "Photo/Pack9.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 209, name: "🎁 PACK 10", description: "", price: 10000, category: "packs", image: "Photo/Pack10.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 210, name: "🎁 PACK 11", description: "", price: 10000, category: "packs", image: "Photo/Pack11.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 211, name: "🎁 PACK 12", description: "", price: 10000, category: "packs", image: "Photo/Pack12.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 212, name: "🎁 PACK 13", description: "", price: 10000, category: "packs", image: "Photo/Pack13.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 213, name: "🎁 PACK 14", description: "", price: 10000, category: "packs", image: "Photo/Pack14.jpg", isSpecial: true, badge: "PROMO" },
 ];
 
 // ==================== MENUS NORMAUX ====================
 const menuItems = [
     // Petit déjeuner
     { id: 1, name: "Petit déjeuner continental", description: "Croissant, pain au chocolat, jus de fruit, café", price: 15000, category: "breakfast", image: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-    { id: 2, name: "Pancakes", description: "Pancakes maison, sirop d'érable, fruits frais", price: 12000, category: "breakfast", image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-    { id: 3, name: "Mofo gasy", description: "Mofo gasy traditionnel, confiture, beurre, café", price: 8000, category: "breakfast", image: "Photo/MofoGasy.jpeg" },
-    { id: 41, name: "Omelette & pain", description: "Omelette aux herbes, pain frais, café ou thé", price: 10000, category: "breakfast", image: "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
+    { id: 2, name: "Pancakes", description: "Pancakes maison, sirop d'érable, fruits frais", price: 5000, category: "breakfast", image: "Photo/Pancake.jpg" },
+    { id: 3, name: "Mofo gasy", description: "Mofo gasy traditionnel, confiture, beurre, café", price: 500, category: "breakfast", image: "Photo/MofoGasy.jpeg" },
+    { id: 41, name: "Sandwich", description: "Pain, Légumes, Fromages, Sauce", price: 6000, category: "breakfast", image: "Photo/Sandwich.jpg" },
     { id: 42, name: "Koba & café", description: "Koba traditionnel, café vanille", price: 7000, category: "breakfast", image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-    { id: 101, name: "Gaufres maison", description: "Gaufres chaudes, chantilly, coulis de chocolat", price: 11000, category: "breakfast", image: "https://images.unsplash.com/photo-1562376552-0d160a2f238d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-    { id: 102, name: "Pain", description: "Farine, blé", price: 4000, category: "breakfast", image: "Photo/Pain.jpeg" },
+    { id: 101, name: "Gaufres maison", description: "Gaufres chaudes, chantilly, coulis de chocolat", price: 1000, category: "breakfast", image: "https://images.unsplash.com/photo-1562376552-0d160a2f238d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
+    { id: 102, name: "Pain", description: "Farine, blé", price: 1000, category: "breakfast", image: "Photo/Pain.jpeg" },
     // { id: 103, name: "Porridge à la vanille", description: "Flocons d'avoine, lait, vanille de Madagascar", price: 8500, category: "breakfast", image: "https://images.unsplash.com/photo-1505311329370-47df2b4572a7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
     // { id: 104, name: "Eggs Benedict", description: "Oeufs pochés, sauce hollandaise, bacon", price: 14000, category: "breakfast", image: "https://images.unsplash.com/photo-1608039829872-3c2d88f5b668?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-    { id: 16, name: "Vary @anana sy hena baolina", description: "Riz aux légumes et boulettes de viande", price: 17000, category: "breakfast", image: "Photo/VaryHenabaolina.jpeg" },
+    { id: 16, name: "Vary @anana sy hena baolina", description: "Riz aux légumes et boulettes de viande", price: 5000, category: "breakfast", image: "Photo/VaryHenabaolina.jpeg" },
     // Déjeuner
     { id: 4, name: "Riz & Ravitoto sy hena kisoa", description: "Riz blanc, ravitoto avec viande de porc", price: 18000, category: "lunch", image: "Photo/Ravitoto.jpeg" },
     { id: 5, name: "Riz & Crevette sauce", description: "Riz parfumé, crevettes sautées à la sauce créole", price: 22000, category: "lunch", image: "Photo/CrevetteSauce.jpeg" },
-    { id: 6, name: "Riz & Poisson grillé & frite", description: "Poisson grillé, riz blanc, frites maison", price: 20000, category: "lunch", image: "https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
+    { id: 6, name: "Spaghetti au crevettes", description: "Spaghetti, crevettes sautées à la sauce", price: 25000, category: "lunch", image: "Photo/SpaghettiCrevette.jpg" },
     { id: 7, name: "Riz & Voanjobory sy hena kisoa", description: "Riz, voanjobory avec viande de porc", price: 19000, category: "lunch", image: "Photo/Voanjobory.jpeg" },
     { id: 8, name: "Riz cantonais", description: "Riz sauté aux légumes, porc, œuf et crevettes", price: 17000, category: "lunch", image: "Photo/RizCantonnais.jpeg" },
     { id: 9, name: "Riz & Crabe", description: "Riz blanc, crabe à la sauce tomate épicée", price: 25000, category: "lunch", image: "Photo/Crabe.jpeg" },
@@ -74,9 +67,8 @@ const menuItems = [
     { id: 13, name: "Riz & Viande sauce", description: "Riz blanc, viande de zébu en sauce", price: 19000, category: "lunch", image: "Photo/ViandeSauce.jpeg" },
     { id: 14, name: "Riz & Poisson au coco", description: "Poisson mijoté au lait de coco, riz blanc", price: 21000, category: "lunch", image: "Photo/PoissonCoco.jpeg" },
     { id: 15, name: "Brochette & frite", description: "Brochettes de zébu grillées, frites maison", price: 18000, category: "lunch", image: "Photo/BrochetteFritte.jpeg " },
-    { id: 105, name: "Riz & Lasopy", description: "Riz blanc, soupe de légumes traditionnelle", price: 14000, category: "lunch", image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-    { id: 106, name: "Riz & Akoho sy sakamalao", description: "Poulet au gingembre, riz parfumé", price: 19500, category: "lunch", image: "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-    { id: 107, name: "Riz & Henakisoa sy anana", description: "Porc sauté aux légumes verts", price: 18500, category: "lunch", image: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
+    { id: 105, name: "Soupe coréen", description: "Nouilles, Viande, Oeuf", price: 14000, category: "lunch", image: "Photo/SoupeCoreen.jpg" },
+    { id: 107, name: "Côtelette et Riz", description: "Porc sauté", price: 18500, category: "lunch", image: "Photo/CoteletteRiz.jpg" },
     // { id: 108, name: "Riz & Trondro gasy", description: "Poisson du lac, sauce tomate, riz blanc", price: 20500, category: "lunch", image: "https://images.unsplash.com/photo-1584308666744-24d5c6deabc5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
     // { id: 109, name: "Riz & Mofo anana", description: "Beignets de légumes, riz blanc", price: 13000, category: "lunch", image: "   " },
     // Dîner
@@ -95,7 +87,7 @@ const menuItems = [
     // { id: 111, name: "Pâtes carbonara", description: "Spaghetti, crème, lardons, parmesan", price: 15500, category: "dinner", image: "https://images.unsplash.com/photo-1645112411344-31c6d7259fdd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
     // { id: 112, name: "Fish & Chips", description: "Filet de poisson pané, frites, sauce tartare", price: 17000, category: "dinner", image: "https://images.unsplash.com/photo-1592279645098-2ac7b2526f6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
     // { id: 113, name: "Wraps poulet", description: "Galette, poulet grillé, crudités, sauce blanche", price: 14000, category: "dinner", image: "https://images.unsplash.com/photo-1626700054175-7ebb20b3d495?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-    { id: 114, name: "Quinoa bowl", description: "Quinoa, avocat, légumes grillés, oeuf poché", price: 16500, category: "dinner", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
+    { id: 114, name: "Poulet fritte", description: "Poulet, pomme de terre", price: 15000, category: "dinner", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
     // Boissons
     { id: 28, name: "XXL", description: "Boisson gazeuse XXL 1.5L", price: 4000, category: "drinks", image: "Photo/XXL.jpeg" },
     { id: 29, name: "Eau vive", description: "Eau minérale naturelle 1.5L", price: 2000, category: "drinks", image: "Photo/EauVive.jpeg" },
@@ -120,9 +112,9 @@ const menuItems = [
     { id: 122, name: "Yaourt aux fruits", description: "Yaourt nature, coulis de fruits frais", price: 5000, category: "dessert", image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
     // { id: 123, name: "Salade de fruits", description: "Dés de fruits frais, sirop léger", price: 5500, category: "dessert", image: "Photo/SaladeFruit" },
     { id: 124, name: "Glace vanille", description: "Glace artisanale à la vanille de Madagascar", price: 4500, category: "dessert", image: "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-    { id: 125, name: "Sorbet citron", description: "Sorbet frais au citron vert", price: 4500, category: "dessert", image: "https://images.unsplash.com/photo-1516559828984-fb3b99548b21?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
+    { id: 125, name: "Gâteau  fraise", description: "Fraise, Crême", price: 5000, category: "dessert", image: "Photo/GateauFraise.jpg" },
     { id: 126, name: "Mousse au chocolat", description: "Mousse légère au chocolat noir", price: 6000, category: "dessert", image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-    { id: 127, name: "Coconut balls", description: "Boules coco, spécialité malgache", price: 4000, category: "dessert", image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" }
+    { id: 127, name: "Vanille + Banane", description: "vanille, banane, crême", price: 10000, category: "dessert", image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" }
 ];
 
 // Ajouter tous les packs

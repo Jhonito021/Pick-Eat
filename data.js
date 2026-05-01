@@ -38,7 +38,7 @@ const menuItems = [
         id: 5,
         name: "Mofo gasy",
         description: "Mofo gasy traditionnel, confiture, beurre, café",
-        price: 10000,
+        price: 500,
         category: "breakfast",
         image: "Photo/MofoGasy.jpeg"
     },
