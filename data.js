@@ -34,14 +34,7 @@ const menuItems = [
         category: "breakfast",
         image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
     },
-    {
-        id: 5,
-        name: "Mofo gasy",
-        description: "Mofo gasy traditionnel, confiture, beurre, café",
-        price: 500,
-        category: "breakfast",
-        image: "Photo/MofoGasy.jpeg"
-    },
+    
     {
         id: 6,
         name: "Mofo Menakely",
