@@ -235,7 +235,7 @@ const menuItems = [
         description: "Morceaux de poulet frits, sauce, frites",
         price: 18000,
         category: "dinner",
-        image: "Photo/PouletFritte.jpeg"
+        image: "Photo/PouletFritte.jpg"
     },
     {
         id: 29,

@@ -25,20 +25,20 @@ function formatPrice(price) {
 
 // ==================== TOUS LES PACKS ====================
 const packs = [
-    { id: 200, name: "🎁 PACK 1", description: "2 jus, fruits, chips, yaourt", price: 15000, category: "packs", image: "Photo/Pack1.jpg", isSpecial: true, badge: "PROMO" },
-    { id: 201, name: "🎁 PACK 2", description: "Chocolat, croissant, gauffre, raisins, fraise", price: 12000, category: "packs", image: "Photo/Pack2.jpg", isSpecial: true, badge: "PROMO" },
-    { id: 202, name: "🎁 PACK 3", description: "Pancake, Gauffre ...", price: 10000, category: "packs", image: "Photo/Pack3.jpg", isSpecial: true, badge: "PROMO" },
-    { id: 203, name: "🎁 PACK 4", description: "Jus naturel, fruit", price: 14000, category: "packs", image: "Photo/Pack4.jpg", isSpecial: true, badge: "PROMO" },
-    { id: 204, name: "🎁 PACK 5", description: "Fruits, Gauffre, Chocolat", price: 20000, category: "packs", image: "Photo/Pack5.jpg", isSpecial: true, badge: "ROMANTIQUE" },
-    { id: 205, name: "🎁 PACK 6", description: "Fruits, Tacos", price: 20000, category: "packs", image: "Photo/Pack6.jpg", isSpecial: true, badge: "AMIS" },
-    { id: 206, name: "🎁 PACK 7", description: "Mini sandwich, jus", price: 10000, category: "packs", image: "Photo/Pack7.jpg", isSpecial: true, badge: "PROMO" },
-    { id: 207, name: "🎁 PACK 8", description: "", price: 10000, category: "packs", image: "Photo/Pack8.jpg", isSpecial: true, badge: "PROMO" },
-    { id: 208, name: "🎁 PACK 9", description: "", price: 10000, category: "packs", image: "Photo/Pack9.jpg", isSpecial: true, badge: "PROMO" },
-    { id: 209, name: "🎁 PACK 10", description: "", price: 10000, category: "packs", image: "Photo/Pack10.jpg", isSpecial: true, badge: "PROMO" },
-    { id: 210, name: "🎁 PACK 11", description: "", price: 10000, category: "packs", image: "Photo/Pack11.jpg", isSpecial: true, badge: "PROMO" },
-    { id: 211, name: "🎁 PACK 12", description: "", price: 10000, category: "packs", image: "Photo/Pack12.jpg", isSpecial: true, badge: "PROMO" },
-    { id: 212, name: "🎁 PACK 13", description: "", price: 10000, category: "packs", image: "Photo/Pack13.jpg", isSpecial: true, badge: "PROMO" },
-    { id: 213, name: "🎁 PACK 14", description: "", price: 10000, category: "packs", image: "Photo/Pack14.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 200, name: "🎁 PACK 1", description: "2 jus, fruits, chips, yaourt", price: 30000, category: "packs", image: "Photo/Pack1.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 201, name: "🎁 PACK 2", description: "Chocolat, croissant, gauffre, raisins, fraise", price: 35000, category: "packs", image: "Photo/Pack2.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 202, name: "🎁 PACK 3", description: "Pancake, Gauffre ...", price: 45000, category: "packs", image: "Photo/Pack3.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 203, name: "🎁 PACK 4", description: "Jus naturel, fruit", price: 25000, category: "packs", image: "Photo/Pack4.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 204, name: "🎁 PACK 5", description: "Fruits, Gauffre, Chocolat", price: 32000, category: "packs", image: "Photo/Pack5.jpg", isSpecial: true, badge: "ROMANTIQUE" },
+    { id: 205, name: "🎁 PACK 6", description: "Fruits, Tacos", price: 50000, category: "packs", image: "Photo/Pack6.jpg", isSpecial: true, badge: "AMIS" },
+    { id: 206, name: "🎁 PACK 7", description: "Mini sandwich, jus", price: 45000, category: "packs", image: "Photo/Pack7.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 207, name: "🎁 PACK 8", description: "", price: 55000, category: "packs", image: "Photo/Pack8.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 208, name: "🎁 PACK 9", description: "", price: 30000, category: "packs", image: "Photo/Pack9.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 209, name: "🎁 PACK 10", description: "", price: 45000, category: "packs", image: "Photo/Pack10.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 210, name: "🎁 PACK 11", description: "", price: 55000, category: "packs", image: "Photo/Pack11.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 211, name: "🎁 PACK 12", description: "", price: 45000, category: "packs", image: "Photo/Pack12.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 212, name: "🎁 PACK 13", description: "", price: 60000, category: "packs", image: "Photo/Pack13.jpg", isSpecial: true, badge: "PROMO" },
+    { id: 213, name: "🎁 PACK 14", description: "", price: 50000, category: "packs", image: "Photo/Pack14.jpg", isSpecial: true, badge: "PROMO" },
 ];
 
 // ==================== MENUS NORMAUX ====================
@@ -77,7 +77,7 @@ const menuItems = [
     { id: 19, name: "Pizza", description: "Pizza garnie au choix", price: 22000, category: "dinner", image: "Photo/Pizza.jpeg" },
     { id: 20, name: "Mac & cheese", description: "Pâtes macaronis au fromage gratiné", price: 14000, category: "dinner", image: "Photo/MacCheese.jpeg" },
     { id: 21, name: "Sushi", description: "Assortiment de sushi et maki (8 pièces)", price: 24000, category: "dinner", image: "Photo/Sushi.jpeg" },
-    { id: 22, name: "Poulet fritte", description: "Morceaux de poulet frits, sauce, frites", price: 18000, category: "dinner", image: "Photo/PouletFritte.jpeg" },
+    { id: 22, name: "Poulet fritte", description: "Morceaux de poulet frits, sauce, frites", price: 18000, category: "dinner", image: "Photo/PouletFritte.jpg" },
     { id: 23, name: "Salade de patte", description: "Salade de pâtes, légumes, thon, mayonnaise", price: 13000, category: "dinner", image: "Photo/SaladePatte.jpeg" },
     { id: 24, name: "Soupe légume", description: "Potage de légumes frais de saison", price: 10000, category: "dinner", image: "Photo/SoupeLegume.jpeg" },
     { id: 25, name: "Pakopako", description: "Beignets malgaches farcis à la viande", price: 12000, category: "dinner", image: "Photo/Pakopako.jpeg" },
@@ -87,7 +87,6 @@ const menuItems = [
     // { id: 111, name: "Pâtes carbonara", description: "Spaghetti, crème, lardons, parmesan", price: 15500, category: "dinner", image: "https://images.unsplash.com/photo-1645112411344-31c6d7259fdd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
     // { id: 112, name: "Fish & Chips", description: "Filet de poisson pané, frites, sauce tartare", price: 17000, category: "dinner", image: "https://images.unsplash.com/photo-1592279645098-2ac7b2526f6d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
     // { id: 113, name: "Wraps poulet", description: "Galette, poulet grillé, crudités, sauce blanche", price: 14000, category: "dinner", image: "https://images.unsplash.com/photo-1626700054175-7ebb20b3d495?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-    { id: 114, name: "Poulet fritte", description: "Poulet, pomme de terre", price: 15000, category: "dinner", image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
     // Boissons
     { id: 28, name: "XXL", description: "Boisson gazeuse XXL 1.5L", price: 4000, category: "drinks", image: "Photo/XXL.jpeg" },
     { id: 29, name: "Eau vive", description: "Eau minérale naturelle 1.5L", price: 2000, category: "drinks", image: "Photo/EauVive.jpeg" },
@@ -102,19 +101,20 @@ const menuItems = [
     { id: 118, name: "Thé glacé maison", description: "Thé noir, citron, menthe, glaçons", price: 4500, category: "drinks", image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
     { id: 119, name: "Café glacé", description: "Café espresso, lait, sirop, glaçons", price: 5000, category: "drinks", image: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
     // Desserts
-    { id: 35, name: "Avocat", description: "Avocat frais, prêt à déguster", price: 4000, category: "dessert", image: "Photo/Avocat.jpeg" },
-    { id: 36, name: "Orange", description: "Orange fraîche et juteuse", price: 3000, category: "dessert", image: "Photo/Orange.jpeg" },
-    { id: 37, name: "Banane", description: "Banane fraîche de Madagascar", price: 2500, category: "dessert", image: "Photo/Banane.jpeg" },
-    { id: 38, name: "Poire", description: "Poire juteuse et sucrée", price: 3500, category: "dessert", image: "Photo/Poire.jpeg" },
-    { id: 39, name: "Ananas", description: "Ananas frais de Madagascar", price: 5000, category: "dessert", image: "Photo/Ananas.jpeg" },
-    { id: 120, name: "Mangue fraîche", description: "Mangue mûre de Madagascar", price: 4500, category: "dessert", image: "https://images.unsplash.com/photo-1553279768-865429fa0078?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
+    { id: 35, name: "Avocat", description: "Avocat frais, prêt à déguster", price: "4000/kg", category: "dessert", image: "Photo/Avocat.jpeg" },
+    { id: 36, name: "Orange", description: "Orange fraîche et juteuse", price: "3000/kg", category: "dessert", image: "Photo/Orange.jpeg" },
+    { id: 37, name: "Banane", description: "Banane fraîche de Madagascar", price: "2500/kg", category: "dessert", image: "Photo/Banane.jpeg" },
+    { id: 38, name: "Poire", description: "Poire juteuse et sucrée", price: "3500/kg", category: "dessert", image: "Photo/Poire.jpeg" },
+    { id: 39, name: "Ananas", description: "Ananas frais de Madagascar", price: "5000/unité", category: "dessert", image: "Photo/Ananas.jpeg" },
+    { id: 120, name: "Mangue fraîche", description: "Mangue mûre de Madagascar", price: "4500/kg", category: "dessert", image: "https://images.unsplash.com/photo-1553279768-865429fa0078?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
     // { id: 121, name: "Fruits de saison", description: "Assortiment de fruits frais locaux", price: 6000, category: "dessert", image: "https://images.unsplash.com/photo-1571770095004-6b61b1cf308a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
     { id: 122, name: "Yaourt aux fruits", description: "Yaourt nature, coulis de fruits frais", price: 5000, category: "dessert", image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
     // { id: 123, name: "Salade de fruits", description: "Dés de fruits frais, sirop léger", price: 5500, category: "dessert", image: "Photo/SaladeFruit" },
     { id: 124, name: "Glace vanille", description: "Glace artisanale à la vanille de Madagascar", price: 4500, category: "dessert", image: "https://images.unsplash.com/photo-1501443762994-82bd5dace89a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
     { id: 125, name: "Gâteau  fraise", description: "Fraise, Crême", price: 5000, category: "dessert", image: "Photo/GateauFraise.jpg" },
     { id: 126, name: "Mousse au chocolat", description: "Mousse légère au chocolat noir", price: 6000, category: "dessert", image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
-    { id: 127, name: "Vanille + Banane", description: "vanille, banane, crême", price: 10000, category: "dessert", image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" }
+    { id: 127, name: "Vanille + Banane", description: "vanille, banane, crême", price: 10000, category: "dessert", image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" },
+
 ];
 
 // Ajouter tous les packs
